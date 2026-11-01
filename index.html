@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abdul Hisham U | Backend Developer (Python/Django &amp; Go)</title>
+<meta name="description" content="Abdul Hisham U is a backend developer from Kerala with 5 years building MLM and e-commerce SaaS platforms in Python/Django, Golang, PostgreSQL and Docker. Immediate joiner.">
+<meta name="keywords" content="Abdul Hisham U, Backend Developer, Golang Developer, Python Django Developer, PostgreSQL, Docker, Kerala, Kochi, Immediate Joiner">
+<meta name="author" content="Abdul Hisham U">
+<meta name="theme-color" content="#f5f3ee">
+<link rel="canonical" href="https://uahisham.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Abdul Hisham U | Backend Developer">
+<meta property="og:description" content="5 years building MLM and e-commerce SaaS backends in Python/Django and Go, serving 10,000+ users. Immediate joiner.">
+<meta property="og:url" content="https://uahisham.github.io/">
+<meta property="og:image" content="https://uahisham.github.io/assets/abdul-hisham.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f3ee; --surface:#fffdf8; --ink:#17171a; --muted:#5d5b56; --line:#dedad0;
+  --accent:#1f5f4a; --accent-soft:#e3eee8; --chip:#ece9e1;
+  --serif:"Fraunces",Georgia,serif; --sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+  --max:1080px;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#121312; --surface:#1a1c1a; --ink:#ecebe6; --muted:#a3a19a; --line:#2c2f2c; --accent:#7cc3a6; --accent-soft:#1d2b25; --chip:#232623;}
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--ink);font:16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:6px;z-index:99}
+.skip:focus{left:12px}
+
+/* nav */
+header.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:var(--serif);font-size:20px;font-weight:600;text-decoration:none;letter-spacing:-.01em}
+.logo span{color:var(--accent)}
+.nav ul{display:flex;gap:26px;list-style:none;align-items:center}
+.nav ul a{text-decoration:none;font-size:14px;color:var(--muted)}
+.nav ul a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-size:14px;font-weight:500;text-decoration:none;border:1px solid var(--ink);transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.solid{background:var(--ink);color:var(--bg)}
+.btn.ghost{background:transparent}
+.nav .btn{padding:8px 16px;font-size:13px}
+.menu{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:6px 10px;font:500 13px var(--sans);color:var(--ink);cursor:pointer}
+
+/* hero */
+.hero{padding:72px 0 40px}
+.hero .grid{display:grid;grid-template-columns:1.35fr .9fr;gap:56px;align-items:center}
+.eyebrow{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:10px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(40px,6vw,68px);line-height:1.04;letter-spacing:-.02em;margin:18px 0 10px}
+h1 em{font-style:italic;color:var(--accent)}
+.role{font-size:18px;color:var(--muted);margin-bottom:22px}
+.lead{font-size:17px;max-width:560px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 22px}
+.socials{display:flex;gap:18px;font:13px var(--mono)}
+.socials a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line)}
+.socials a:hover{color:var(--ink);border-color:var(--ink)}
+.portrait{position:relative}
+.portrait img{border-radius:20px;aspect-ratio:4/5;object-fit:cover;object-position:top;width:100%;filter:grayscale(1)}
+.badge{position:absolute;left:-18px;bottom:28px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 16px;font-size:13px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.badge b{display:block;font-family:var(--serif);font-size:18px;font-weight:600}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:56px}
+.stat{padding:22px 20px;border-left:1px solid var(--line)}
+.stat:first-child{border-left:0;padding-left:0}
+.stat b{display:block;font-family:var(--serif);font-weight:400;font-size:36px;line-height:1.1}
+.stat span{font-size:13px;color:var(--muted)}
+
+/* ticker */
+.ticker{overflow:hidden;border-bottom:1px solid var(--line);padding:16px 0;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;gap:44px;width:max-content;animation:scroll 38s linear infinite;font:14px var(--mono);color:var(--muted)}
+.track span::before{content:"◆";margin-right:44px;color:var(--accent);font-size:9px;vertical-align:middle}
+@keyframes scroll{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.track{animation:none}}
+
+/* sections */
+section.block{padding:88px 0;border-bottom:1px solid var(--line)}
+.head{display:grid;grid-template-columns:200px 1fr;gap:32px;margin-bottom:40px}
+.num{font:500 13px var(--mono);color:var(--accent);padding-top:12px}
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(30px,4vw,44px);line-height:1.1;letter-spacing:-.015em}
+.body{margin-left:232px}
+p+p{margin-top:14px}
+.muted{color:var(--muted)}
+
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px}
+.card h3{font-size:16px;font-weight:600;margin-bottom:6px}
+.card p{font-size:15px;color:var(--muted)}
+.icon{font:500 12px var(--mono);color:var(--accent);margin-bottom:12px;display:block}
+.domains{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.chip{background:var(--chip);border-radius:999px;padding:5px 12px;font:12.5px var(--mono);color:var(--ink)}
+
+.impact{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line)}
+.impact div{padding:26px 22px 26px 0;border-bottom:1px solid var(--line)}
+.impact b{font-family:var(--serif);font-weight:400;font-size:24px;display:block;line-height:1.2;margin-bottom:8px}
+.impact p{font-size:14.5px;color:var(--muted);padding-right:12px}
+
+.job{display:grid;grid-template-columns:200px 1fr;gap:32px}
+.job .when{font:13px/1.7 var(--mono);color:var(--muted)}
+.job h3{font-family:var(--serif);font-weight:400;font-size:26px;line-height:1.2}
+.job .co{color:var(--accent);font-weight:500;margin:4px 0 16px}
+ul.ticks{list-style:none}
+ul.ticks li{position:relative;padding-left:22px;margin-bottom:10px}
+ul.ticks li::before{content:"→";position:absolute;left:0;color:var(--accent)}
+
+.project{display:grid;grid-template-columns:200px 1fr;gap:32px;padding:30px 0;border-top:1px solid var(--line)}
+.project:last-child{border-bottom:1px solid var(--line)}
+.project .idx{font:13px var(--mono);color:var(--muted)}
+.project h3{font-size:20px;font-weight:600;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.tag-feat{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.08em;background:var(--accent);color:var(--bg);padding:3px 8px;border-radius:999px}
+.project p{color:var(--muted);margin:8px 0 12px;max-width:680px}
+.outcome{font-size:14.5px;border-left:2px solid var(--accent);padding-left:12px;margin-bottom:14px}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.project a.more{font:13px var(--mono);color:var(--accent);text-decoration:none;margin-top:12px;display:inline-block}
+
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.skills h3{font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+
+.edu{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.edu .card small{font:12.5px var(--mono);color:var(--muted);display:block;margin-top:10px}
+.certs{margin-top:28px}
+.certs h3{font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+
+.contact h2{font-size:clamp(36px,6vw,64px)}
+.contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
+.contact-grid a{text-decoration:none}
+.contact-grid .card:hover{border-color:var(--ink)}
+.contact-grid small{font:12px var(--mono);color:var(--muted);display:block;margin-bottom:6px;text-transform:uppercase;letter-spacing:.08em}
+.contact-grid span{font-size:14.5px;word-break:break-word}
+
+footer{padding:36px 0;font-size:13px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{text-decoration:none}
+
+@media (max-width:900px){
+  .hero .grid{grid-template-columns:1fr;gap:40px}
+  .portrait{max-width:380px}
+  .badge{left:12px}
+  .head,.job,.project{grid-template-columns:1fr;gap:10px}
+  .body{margin-left:0}
+  .impact,.skills,.edu{grid-template-columns:1fr 1fr}
+  .contact-grid{grid-template-columns:1fr 1fr}
+  .stats{grid-template-columns:1fr 1fr}
+  .stat:nth-child(3){border-left:0;padding-left:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--line)}
+}
+@media (max-width:720px){
+  .nav ul{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;align-items:flex-start;gap:16px;padding:20px 24px;background:var(--bg);border-bottom:1px solid var(--line)}
+  .nav ul.open{display:flex}
+  .menu{display:block}
+  .wrap{padding:0 16px}
+  .hero{padding-top:44px}
+  section.block{padding:60px 0}
+  .cards,.impact,.skills,.edu,.contact-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#home">Abdul Hisham<span>.</span></a>
+    <button class="menu" aria-expanded="false" aria-controls="navlinks">Menu</button>
+    <ul id="navlinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="btn solid" href="assets/Abdul_Hisham_U_Backend_Developer.pdf" target="_blank" rel="noopener">Resume</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <p class="eyebrow"><span class="dot"></span>Open to work · Immediate joiner</p>
+        <h1>Abdul Hisham U.<br>I keep backends <em>correct</em> under load.</h1>
+        <p class="role">Backend Developer · Python/Django &amp; Golang · Kerala, India</p>
+        <p class="lead">5 years building MLM and e-commerce SaaS platforms at Epixel Solutions, where my code handled user hierarchies, orders, commissions and payouts for 10,000+ users. One bug there means someone gets paid the wrong amount.</p>
+        <div class="cta">
+          <a class="btn solid" href="#projects">View my work</a>
+          <a class="btn ghost" href="assets/Abdul_Hisham_U_Backend_Developer.pdf" target="_blank" rel="noopener">Download resume</a>
+          <a class="btn ghost" href="#contact">Contact me</a>
+        </div>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/abdul-hisham-u-49799b208/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/uahisham" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:abdulhishaminfo@gmail.com">Email</a>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="assets/abdul-hisham.jpg" alt="Portrait of Abdul Hisham U" width="720" height="833">
+        <div class="badge"><b>5 yrs</b>in production backends</div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>10,000+</b><span>users on platforms I built for</span></div>
+      <div class="stat"><b>5 yrs</b><span>production backend experience</span></div>
+      <div class="stat"><b>2</b><span>core languages: Python &amp; Go</span></div>
+      <div class="stat"><b>0 days</b><span>notice period, can join now</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="track">
+    <span>Python</span><span>Django</span><span>Django REST Framework</span><span>Golang</span><span>PostgreSQL</span><span>Docker</span><span>Celery</span><span>REST APIs</span><span>Microservices</span><span>Swagger</span><span>MySQL</span><span>Linux</span><span>Node.js</span><span>Selenium</span>
+    <span>Python</span><span>Django</span><span>Django REST Framework</span><span>Golang</span><span>PostgreSQL</span><span>Docker</span><span>Celery</span><span>REST APIs</span><span>Microservices</span><span>Swagger</span><span>MySQL</span><span>Linux</span><span>Node.js</span><span>Selenium</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="block" id="about">
+  <div class="wrap">
+    <div class="head"><span class="num">01 / About</span><h2>Backend work where correctness is the feature.</h2></div>
+    <div class="body">
+      <p>I started with a Diploma in Computer Engineering and spent the next 5 years at Epixel Solutions, a product company building MLM and e-commerce software. Across multiple client projects on one core SaaS platform, I grew from fundamentals to owning production backend code in Python/Django and Go.</p>
+      <p class="muted">Now I'm looking for Senior Backend Engineer roles at product companies in SaaS, fintech or e-commerce, anywhere in India: on-site, hybrid or remote.</p>
+      <div class="cards" style="margin-top:32px">
+        <div class="card"><span class="icon">[ api ]</span><h3>APIs &amp; architecture</h3><p>Django REST Framework and Go APIs, documented with Swagger; monolith pieces split into microservices.</p></div>
+        <div class="card"><span class="icon">[ data ]</span><h3>Data &amp; performance</h3><p>PostgreSQL schema design and query tuning for genealogy and transaction-heavy workloads.</p></div>
+        <div class="card"><span class="icon">[ async ]</span><h3>Concurrency &amp; async</h3><p>Concurrent Go services alongside Django, Celery for background work, and debugging what breaks under load.</p></div>
+        <div class="card"><span class="icon">[ money ]</span><h3>Payments &amp; payouts</h3><p>Commission and payout logic, payment gateway and third-party API integrations.</p></div>
+      </div>
+      <div class="domains">
+        <span class="chip">MLM / direct selling</span><span class="chip">E-commerce</span><span class="chip">Payments &amp; payouts</span><span class="chip">Multi-client SaaS</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section class="block" id="impact">
+  <div class="wrap">
+    <div class="head"><span class="num">02 / Impact</span><h2>What changed because of my work.</h2></div>
+    <div class="body">
+      <div class="impact">
+        <div><b>10,000+ users</b><p>Built and maintained backend features for MLM and e-commerce platforms across multiple client projects.</p></div>
+        <div><b>Deadlocks fixed</b><p>Traced hangs in Dockerized Go services to mutexes that were locked but never released, and made them stable under concurrent load.</p></div>
+        <div><b>Releases in a few commands</b><p>Automated a manual multi-step deployment with Docker, Selenium checks and shell scripts.</p></div>
+        <div><b>Payouts you can trust</b><p>Django and PostgreSQL modules for commissions and payouts, where correctness directly affects every member's earnings.</p></div>
+        <div><b>Monolith → services</b><p>Redesigned monolithic components into microservices using MVC patterns, so teams could scale and maintain them.</p></div>
+        <div><b>Faster responses</b><p>Moved slow work to Celery background tasks and tuned PostgreSQL queries behind reports and payout runs.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="block" id="experience">
+  <div class="wrap">
+    <div class="head"><span class="num">03 / Experience</span><h2>Where I've worked.</h2></div>
+    <div class="job">
+      <div class="when">Nov 2021 – Oct 2026<br>5 years · Full-time<br>Kerala, India</div>
+      <div>
+        <h3>Software Engineer</h3>
+        <p class="co">Epixel Solutions Pvt. Ltd.</p>
+        <ul class="ticks">
+          <li>Built Django REST Framework APIs and PostgreSQL-backed modules for user hierarchies, orders, commissions and payouts on platforms with 10,000+ users.</li>
+          <li>Built and ran concurrent, performance-critical Go services alongside the Django codebase across 5 years of production releases.</li>
+          <li>Diagnosed and fixed deadlocks in Dockerized Go services caused by unreleased mutexes.</li>
+          <li>Redesigned monolithic components into microservices; integrated third-party APIs and payment gateways; used Celery for async processing.</li>
+          <li>Tuned PostgreSQL schemas and queries for data-heavy genealogy and transaction workloads.</li>
+          <li>Containerized services with Docker and automated releases with Docker, Selenium checks and shell scripts.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="block" id="projects">
+  <div class="wrap">
+    <div class="head"><span class="num">04 / Projects</span><h2>Selected work.</h2></div>
+
+    <article class="project">
+      <span class="idx">01 · Epixel</span>
+      <div>
+        <h3>MLM commission &amp; payout engine <span class="tag-feat">Featured</span></h3>
+        <p>Core backend for a multi-client MLM SaaS platform: genealogy trees, member hierarchies, orders, commission calculation and payouts.</p>
+        <p class="outcome">Runs for 10,000+ users across multiple client projects, where every bug is a wrong payment.</p>
+        <div class="tags"><span class="chip">Python</span><span class="chip">Django</span><span class="chip">DRF</span><span class="chip">PostgreSQL</span><span class="chip">Celery</span></div>
+      </div>
+    </article>
+
+    <article class="project">
+      <span class="idx">02 · Epixel</span>
+      <div>
+        <h3>Concurrent Go services</h3>
+        <p>Performance-critical Go services running alongside the Django codebase, containerized with Docker.</p>
+        <p class="outcome">Found and fixed mutex deadlocks, making the services stable under concurrent load.</p>
+        <div class="tags"><span class="chip">Golang</span><span class="chip">Concurrency</span><span class="chip">Docker</span><span class="chip">REST APIs</span></div>
+      </div>
+    </article>
+
+    <article class="project">
+      <span class="idx">03 · Epixel</span>
+      <div>
+        <h3>E-commerce APIs &amp; payment integrations</h3>
+        <p>REST APIs documented with Swagger, powering web front ends and third-party integrations, including payment gateways.</p>
+        <p class="outcome">Streamlined transaction processing and cut manual work in order fulfillment.</p>
+        <div class="tags"><span class="chip">Django REST Framework</span><span class="chip">Swagger</span><span class="chip">Payment gateways</span></div>
+      </div>
+    </article>
+
+    <article class="project">
+      <span class="idx">04 · Epixel</span>
+      <div>
+        <h3>Release automation</h3>
+        <p>Replaced a manual, multi-step deployment with a scripted workflow.</p>
+        <p class="outcome">Releases now take a few commands, with automated Selenium checks before going live.</p>
+        <div class="tags"><span class="chip">Docker</span><span class="chip">Selenium</span><span class="chip">Shell scripting</span></div>
+      </div>
+    </article>
+
+    <article class="project">
+      <span class="idx">05 · Open source</span>
+      <div>
+        <h3>Django works</h3>
+        <p>A collection of my Django projects and experiments.</p>
+        <div class="tags"><span class="chip">Python</span><span class="chip">Django</span></div>
+        <a class="more" href="https://github.com/uahisham/django" target="_blank" rel="noopener">View on GitHub →</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <span class="idx">06 · College, 2021</span>
+      <div>
+        <h3>On Wheel Rent</h3>
+        <p>Vehicle rental web app: users browse available vehicles and rent them online, with a JavaScript front end.</p>
+        <div class="tags"><span class="chip">JavaScript</span><span class="chip">HTML/CSS</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="block" id="skills">
+  <div class="wrap">
+    <div class="head"><span class="num">05 / Skills</span><h2>Tools I use every day.</h2></div>
+    <div class="skills">
+      <div class="card"><h3>Languages</h3><div class="tags"><span class="chip">Python</span><span class="chip">Go</span><span class="chip">SQL</span><span class="chip">JavaScript</span><span class="chip">HTML/CSS</span></div></div>
+      <div class="card"><h3>Frameworks</h3><div class="tags"><span class="chip">Django</span><span class="chip">Django REST Framework</span><span class="chip">Django ORM</span><span class="chip">Node.js</span><span class="chip">Bootstrap</span></div></div>
+      <div class="card"><h3>Databases</h3><div class="tags"><span class="chip">PostgreSQL</span><span class="chip">MySQL</span></div></div>
+      <div class="card"><h3>APIs &amp; architecture</h3><div class="tags"><span class="chip">REST APIs</span><span class="chip">Microservices</span><span class="chip">Swagger/OpenAPI</span><span class="chip">MVC</span><span class="chip">Payment gateways</span></div></div>
+      <div class="card"><h3>Async &amp; concurrency</h3><div class="tags"><span class="chip">Celery</span><span class="chip">Go concurrency</span><span class="chip">Deadlock debugging</span></div></div>
+      <div class="card"><h3>DevOps &amp; tools</h3><div class="tags"><span class="chip">Docker</span><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Bitbucket</span><span class="chip">AWS CodeCommit</span><span class="chip">Linux</span><span class="chip">Shell</span><span class="chip">Selenium</span><span class="chip">Postman</span></div></div>
+      <div class="card"><h3>AI / LLM</h3><div class="tags"><span class="chip">OpenAI API</span><span class="chip">Anthropic API</span><span class="chip">RAG</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="block" id="education">
+  <div class="wrap">
+    <div class="head"><span class="num">06 / Education</span><h2>Learning, formally and on the job.</h2></div>
+    <div class="edu">
+      <div class="card"><h3>Bachelor of Computer Applications</h3><p>Indira Gandhi National Open University (IGNOU)</p><small>Pursuing</small></div>
+      <div class="card"><h3>Diploma in Computer Engineering</h3><p>Seethi Sahib Memorial Polytechnic College, Tirur</p><small>2018 – 2021 · CGPA 8.8 / 10</small></div>
+      <div class="card"><h3>Higher Secondary (Class XII)</h3><p>Devadhar Govt. Higher Secondary School, Tanur</p><small>2018</small></div>
+    </div>
+    <div class="certs">
+      <h3>Certifications</h3>
+      <div class="tags"><span class="chip">IBM Cloud Essentials</span><span class="chip">Introduction to Cloud (IBM)</span><span class="chip">Serverless Computing using Cloud Functions (IBM)</span><span class="chip">SQL and Relational Databases 101</span><span class="chip">NoSQL and DBaaS 101</span><span class="chip">Python 101 for Data Science</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="block contact" id="contact">
+  <div class="wrap">
+    <div class="head"><span class="num">07 / Contact</span><h2>Hiring backend engineers? Let's talk.</h2></div>
+    <p class="muted">Available to join immediately. Open to on-site, hybrid or remote roles anywhere in India.</p>
+    <div class="contact-grid">
+      <a class="card" href="mailto:abdulhishaminfo@gmail.com"><small>Email</small><span>abdulhishaminfo@gmail.com</span></a>
+      <a class="card" href="tel:+918111805239"><small>Phone</small><span>+91 81118 05239</span></a>
+      <a class="card" href="https://wa.me/918111805239" target="_blank" rel="noopener"><small>WhatsApp</small><span>Message me</span></a>
+      <a class="card" href="https://www.linkedin.com/in/abdul-hisham-u-49799b208/" target="_blank" rel="noopener"><small>LinkedIn</small><span>abdul-hisham-u</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Abdul Hisham U · Backend Developer</span>
+    <span><a href="https://github.com/uahisham" target="_blank" rel="noopener">GitHub</a> · <a href="#home">Back to top ↑</a></span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const m = document.querySelector('.menu'), l = document.getElementById('navlinks');
+  m.addEventListener('click', () => { const o = l.classList.toggle('open'); m.setAttribute('aria-expanded', o); });
+  l.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { l.classList.remove('open'); m.setAttribute('aria-expanded', false); }));
+</script>
+</body>
+</html>
